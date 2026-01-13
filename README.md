@@ -11,7 +11,7 @@ A personal portfolio website created using HTML and CSS.
 A responsive landing page designed using HTML and CSS.
 
 ### Task 3: Calculator
-A simple calculator built using HTML, CSS, and JavaScript.
+A simple calculator built using HTML, CSS and JavaScript.
 
 ## Live Demo
 https://nshtahmed07-glitch.github.io/CodSoft/
