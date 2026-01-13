@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* VIDEO */
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* NAVBAR */
+.navbar{
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu li a{
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 15px;
+    font-weight: 450;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    text-decoration: none;
+    color: #0b0000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.menu li a:hover{
+    color: #ff7a00;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #ff7a00;
+    transition: width 0.3s ease;
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b0000;
+}
+
+.logo span{
+    color: orangered;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-btn{
+    padding: 10px 25px;
+    border: 2px solid orangered;
+    background: transparent;
+    color: #0b0000;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.nav-btn {
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ff7a00;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(255,122,0,0.4);
+    transform: translateY(-2px);
+}
+/* CONTENT */
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 600px;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.content h1 span{
+    font-family: 'Pattaya', sans-serif;
+    color: orangered;
+    font-weight: normal;
+}
+
+.content p{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.9;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.content p:hover{
+    color: #ff7a00;
+    transform: translateX(2px);
+
+}
+
+/* BUTTON + SOCIALS */
+.actions{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-btn{
+    padding: 12px 30px;
+    background: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.main-btn span{
+    color: orangered;
+}
+
+.socials a{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: orangered;
+    text-decoration: none;
+}
+.socials a i {
+    color: #ff7a00;          /* current orange */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socials a i:hover {
+    color: #000000;          /* black on hover */
+    transform: scale(1.1);   /* slight zoom (optional but nice) */
+}
