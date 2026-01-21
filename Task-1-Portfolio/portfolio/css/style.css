@@ -284,6 +284,10 @@ section.contact {
  max-width: 600px;
  margin: 0 auto;
 }
+.contact-form button{
+    display: block;
+    margin: 20px auto 0;
+}
 .contact h2 span{
     color:var(--primary);
 }
@@ -305,21 +309,42 @@ section.contact {
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--primary);
+  
 }
 
 .contact-form textarea {
   resize: none;
 }
+
 .footer-text {
   text-align: center;
   margin-top: 40px;
   font-size: 14px;
   color: #555;
   margin-bottom: 20px;
-}
 
-.contact-form button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 1rem;
+}
+.contact{position:relative}.contact-info{
+    position:absolute;
+    bottom:20px;left:20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .feature-box {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
 }
